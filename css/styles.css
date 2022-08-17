@@ -85,6 +85,7 @@ img{
 .header-nav{
 	display: flex;
 	align-items: center;
+	
 	/* padding-top: 24px;
 	padding-bottom: 25px; */
 }
@@ -131,7 +132,7 @@ img{
 	display: flex;
 	flex-direction: column;
 	align-items: center;
-	gap: 28;
+	gap: 28px;
 }
 
 .footer {
@@ -164,6 +165,9 @@ position: relative;
 	letter-spacing: 0.02em;
 	color: #212121;
 	padding: 31px 0;
+
+	outline: transparent;
+
 	transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
@@ -181,7 +185,7 @@ position: relative;
 	flex-direction: row;
 	align-items:center;
 	justify-content: center;
-	gap:10px;
+	gap: 10px;
 	font-style: normal;
 	font-weight: 500;
 	font-size: 14px;
@@ -189,6 +193,9 @@ position: relative;
 	letter-spacing: 0.02em;
 	color: #757575;
 	padding: 31px 0;
+
+	outline: transparent;
+
 	transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .header-link:hover,
@@ -210,6 +217,8 @@ position: relative;
 
 .footer-flex{
 	display: flex;
+	justify-content: space-between;
+	align-items: baseline;
 }
 
 .address-map a,
@@ -230,6 +239,7 @@ position: relative;
 
 
 .footer-address-list a {
+	outline: transparent;
 	transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .footer-address-list a:hover,
@@ -250,10 +260,7 @@ position: relative;
 	margin-bottom: 0;
 }
 
-.footer-right{
-	margin-left: 70px;
-	margin-top: 12px;
-}
+
 
 .footer-banner{
 	font-style: normal;
@@ -264,6 +271,79 @@ position: relative;
 	text-transform: uppercase;
 	color: #FFFFFF;
 	margin-bottom: 20px;
+}
+
+
+/*------------------SUBSKRIBE--------------*/
+
+.subscribe-form{
+	display: flex;
+}
+.subscribe-input{
+	margin-right: 12px;
+
+	width: 358px;
+	height: 50px;
+	outline: transparent;
+	border: 1px solid rgba(255, 255, 255, 0.3);
+	filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+	border-radius: 4px;
+	background-color: transparent;
+	color: #ffffff;
+	padding-left: 16px;
+
+	transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.subscribe-input:hover,
+.subscribe-input:focus {
+	border-color: var(--accent-color);
+}
+.subscribe-input::placeholder{
+	/* border-color: var(--accent-color); */
+	font-style: normal;
+	font-weight: 400;
+	font-size: 16px;
+	line-height: 20px;
+	letter-spacing: 0.03em;
+	color: rgba(255, 255, 255, 0.6);
+	transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.subscribe-input:hover::placeholder,
+.subscribe-input:focus::placeholder{
+	color: #ffffff;
+}
+
+.subscribe-button{
+	font-style: normal;
+	font-weight: 700;
+	font-size: 16px;
+	line-height: 1.88;
+	display: flex;
+	align-items: center;
+	gap: 10px;
+	justify-content: center;
+	letter-spacing: 0.06em;
+	color: #FFFFFF;
+	outline: transparent;
+
+	width: 200px;
+	height: 50px;
+	background: var(--accent-color);
+	box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+	border-radius: 4px;
+	border: none;
+
+	transition: background 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.subscribe-button:hover,
+.subscribe-button:focus{
+	background: #188CE8;
+}
+
+.icon-send{
+	fill: #ffffff;
+	height: 24px;
+	width: 24px;
 }
 
 /*-----------------MAIN STUDIO-----------------*/
@@ -494,6 +574,7 @@ position: relative;
 	height: 92px;
 	border: 1px solid #AFB1B8;
 	border-radius: 4px;
+	outline: transparent;
 	display: flex;
 	justify-content: center;
 	align-items: center;
@@ -531,6 +612,7 @@ padding-bottom: 0;
 	width: 44px;
 	height: 44px;
 	border-radius: 50%;
+	outline: transparent;
 	display: flex;
 	align-items: center;
 	justify-content: center;
@@ -613,6 +695,7 @@ padding-bottom: 0;
 	border: 0px;
 	padding: 6px 22px;
 	
+	outline: transparent;
 	transition: 
 	box-shadow  250ms cubic-bezier(0.4, 0, 0.2, 1),
 	color  250ms cubic-bezier(0.4, 0, 0.2, 1),
@@ -641,6 +724,7 @@ padding-bottom: 0;
 	margin-right: 0;
 } 
 .portf-link {
+	outline: transparent;
 	text-decoration: none;
 	transition: filter 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
@@ -701,6 +785,7 @@ padding-bottom: 0;
 	border-left: 1px solid #EEEEEE;
 }
 
+/*--------------------------MODAL WINDOW----------------*/
 
 .is-hidden {
     visibility: hidden;
@@ -724,7 +809,7 @@ padding-bottom: 0;
 
 .mod-window{
 	width: 528px;
-	max-height: 581px;
+	height: 581px;
 	background-color: #ffffff;
 	box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
 	border-radius: 4px;
@@ -750,6 +835,7 @@ padding-bottom: 0;
 	align-items: center;
 	justify-content: center;
 
+	outline: transparent;
 	transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
@@ -798,12 +884,12 @@ padding-bottom: 0;
 	letter-spacing: 0.01em;
 	color: #000000;
 
+	outline: transparent;
 	transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .modal-input{
-	height: 40px;
-	margin-bottom: 10px;
+	height: 40px;	
 }
 
 .modal-input:not(:focus):not(:placeholder-shown):valid{
@@ -838,6 +924,7 @@ padding-bottom: 0;
 
 .input-wrap {
 	position: relative;
+	margin-bottom: 10px;
 }
 .input-icon {
 	position: absolute;
@@ -957,6 +1044,7 @@ padding-bottom: 0;
 	border-radius: 4px;
 	border-color: transparent;
 
+	outline: transparent;
 	transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .submit-button:hover,
