@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="ua">
+<html lang="uk">
 	<head>
 		<meta charset="UTF-8" />
 		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
@@ -13,6 +13,7 @@
 		/>
 		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css" integrity="sha512-wpPYUAdjBVSE4KJnH1VR1HeZfpl1ub8YT/NKx4PuQ5NmX2tKuGu6U/JRp5y+Y8XG2tV+wKQpNHVUX03MfMFn9Q==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 		<link rel="stylesheet" href="./css/styles.css" />
+		<link rel="stylesheet" href="./sass/main.scss">
 	</head>
 
 	<body>
@@ -304,6 +305,23 @@
 			</section>
 		</main>
 
+		<article class="product">
+			<div class="product__overlay">
+			  <img class="product__image" src="" />
+			</div>
+		  
+			<div class="product__content">
+			  <h2 class="product__name">Холодильник</h2>
+			  <p class="product__description">Шикарный холодильник</p>
+			  <a class="product__link" href="">Посмотреть все характеристики</a>
+		  
+			  <div class="product__meta">
+				<p class="product__price">Цена: 30000</p>
+				<p class="product__quantity">Осталось: 8 штук</p>
+			  </div>
+			</div>
+		  </article>
+
 		<footer class="footer">
 			<div class="container">
 				<div class="footer-flex">
@@ -461,11 +479,11 @@
 
 						<div class="privacy-checkbox">
 							<input 
-							class="modal-check visually-hidden"
-							type="checkbox"
-							name="privacy-policy"
-							id="privacy-policy"
-							value="confirmed"
+								class="modal-check visually-hidden"
+								type="checkbox"
+								name="privacy-policy"
+								id="privacy-policy"
+								value="confirmed"
 							/>
 							<label for="privacy-policy" class="check-text">
 								<span>
@@ -473,7 +491,10 @@
 										<use href="./images/icons-studio.svg#icon-check-vector"></use>
 									</svg>
 								</span>
-								Погоджуюсь на розсилку та приймаю <a href="" class="conditions">Умови угоди</a>
+								
+								Погоджуюсь на розсилку та приймаю
+								<a href="" class="conditions">Умови угоди</a>
+								
 							</label>
 						</div>
 
