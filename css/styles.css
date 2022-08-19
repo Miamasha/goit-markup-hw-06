@@ -959,9 +959,14 @@ padding-bottom: 0;
 
 .privacy-checkbox{
 	margin-bottom: 30px;
+	margin-left: 13px;
+}
+.check-text {
+	display: flex;
+	align-items: center;
 }
 .check-text,
-.conditions {
+.conditions {	
 	font-style: normal;
 	font-weight: 400;
 	font-size: 14px;
@@ -974,17 +979,9 @@ padding-bottom: 0;
 	color: var(--accent-color);
 }
 
-.modal-check{
-	display: flex;
-	align-items: center;
-	justify-content: center;		
-}
 .check-text span{
 	display: flex;
 	align-items: center;
-	justify-content: center;
-	flex-direction: row;
-	
 	height: 15px;
 	width: 16px;
 	border: 2px solid #2F303A;
